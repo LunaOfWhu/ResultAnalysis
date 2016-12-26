@@ -1,0 +1,186 @@
+Running Symbolic PathFinder ...
+Using Green Framework...
+[20161224 18:54:52][za.ac.sun.cs.green.Green <init>][非常详细] Solver("anonymous1") created
+[20161224 18:54:52][za.ac.sun.cs.green.Green registerService][信息] register service: name="sat", subservice=za.ac.sun.cs.green.service.slicer.SATSlicerService
+[20161224 18:54:52][za.ac.sun.cs.green.Green registerService][信息] register service: name="za.ac.sun.cs.green.service.slicer.SATSlicerService", subservice=cn.edu.whu.sklse.greentrie.canolize.SATCanonizerService
+[20161224 18:54:52][za.ac.sun.cs.green.Green registerService][信息] register service: name="cn.edu.whu.sklse.greentrie.canolize.SATCanonizerService", subservice=cn.edu.whu.sklse.greentrie.coral.SATCoralService
+symbolic.max_pc_length=2147483647
+symbolic.max_pc_msec=0
+symbolic.min_int=-1000000
+symbolic.max_int=1000000
+symbolic.min_double=-8.0
+symbolic.max_double=7.0
+JavaPathfinder core system v8.0 (rev 28+) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+tsafe_jpf.engine.Driver_TS_D_7.main()
+
+====================================================== search started: 16-12-24 下午6:54
+instance:za.ac.sun.cs.green.Instance@5aaa6d82
+[20161224 18:54:53][za.ac.sun.cs.green.taskmanager.ParallelTaskManager process][信息] processing serviceName="sat"
+canonized:((1.0*val1_1_SYMREAL)+(1.0*val2_2_SYMREAL))<0.0
+found no result for:((1.0*v0)+(1.0*v1))<0.0
+solve instance:((1.0*v0)+(1.0*v1))<0.0
+symbool:(((1.0*$V1)+(1.0*$V2)) < 0.0)
+put into true trie: ((1.0*v0)+(1.0*v1))<0.0with solution:null
+time for solving:362
+instance:za.ac.sun.cs.green.Instance@33833882
+[20161224 18:54:53][za.ac.sun.cs.green.taskmanager.ParallelTaskManager process][信息] processing serviceName="sat"
+canonized:((1.0*val1_1_SYMREAL)+(1.0*val2_2_SYMREAL))==0.0
+found no result for:((1.0*v0)+(1.0*v1))==0.0
+solve instance:((1.0*v0)+(1.0*v1))==0.0
+symbool:(((1.0*$V5)+(1.0*$V6)) == 0.0)
+put into true trie: ((1.0*v0)+(1.0*v1))==0.0with solution:null
+time for solving:20
+instance:za.ac.sun.cs.green.Instance@e2d56bf
+[20161224 18:54:53][za.ac.sun.cs.green.taskmanager.ParallelTaskManager process][信息] processing serviceName="sat"
+canonized:((1.0*val1_1_SYMREAL)+(1.0*val2_2_SYMREAL))>0.0
+found no result for:((1.0*v0)+(1.0*v1))>0.0
+solve instance:((1.0*v0)+(1.0*v1))>0.0
+symbool:(((1.0*$V9)+(1.0*$V10)) > 0.0)
+put into true trie: ((1.0*v0)+(1.0*v1))>0.0with solution:null
+time for solving:19
+PCChoiceGenerator中的输出－－pc:constraint # = 1
+(val1_1_SYMREAL + val2_2_SYMREAL) < CONST_0.0
+instance:za.ac.sun.cs.green.Instance@5fdef03a
+[20161224 18:54:53][za.ac.sun.cs.green.taskmanager.ParallelTaskManager process][信息] processing serviceName="sat"
+canonized:(((1.0*val1_1_SYMREAL)+(1.0*val2_2_SYMREAL))<0.0)&&((1.0*val2_2_SYMREAL)<0.0)
+found no result for:(((1.0*v0)+(1.0*v1))<0.0)&&((1.0*v1)<0.0)
+solve instance:(((1.0*v0)+(1.0*v1))<0.0)&&((1.0*v1)<0.0)
+symbool:((((1.0*$V13)+(1.0*$V14)) < 0.0) & ((1.0*$V14) < 0.0))
+put into true trie: (((1.0*v0)+(1.0*v1))<0.0)&&((1.0*v1)<0.0)with solution:null
+time for solving:15
+instance:za.ac.sun.cs.green.Instance@1e81f4dc
+[20161224 18:54:53][za.ac.sun.cs.green.taskmanager.ParallelTaskManager process][信息] processing serviceName="sat"
+expression:((val1_1_SYMREAL+val2_2_SYMREAL)<0.0)&&(0.0==val2_2_SYMREAL)
+expression after order:((val1_1_SYMREAL+val2_2_SYMREAL)<0.0)&&(val2_2_SYMREAL==0.0)
+canonized:(((1.0*val1_1_SYMREAL)+(1.0*val2_2_SYMREAL))<0.0)&&((1.0*val2_2_SYMREAL)==0.0)
+found no result for:(((1.0*v0)+(1.0*v1))<0.0)&&((1.0*v1)==0.0)
+solve instance:(((1.0*v0)+(1.0*v1))<0.0)&&((1.0*v1)==0.0)
+symbool:((((1.0*$V17)+(1.0*$V18)) < 0.0) & ((1.0*$V18) == 0.0))
+put into false trie: (((1.0*v0)+(1.0*v1))<0.0)&&((1.0*v1)==0.0)with solution:null
+time for solving:558
+instance:za.ac.sun.cs.green.Instance@65ae6ba4
+[20161224 18:54:54][za.ac.sun.cs.green.taskmanager.ParallelTaskManager process][信息] processing serviceName="sat"
+canonized:(((1.0*val1_1_SYMREAL)+(1.0*val2_2_SYMREAL))<0.0)&&((1.0*val2_2_SYMREAL)>0.0)
+found no result for:(((1.0*v0)+(1.0*v1))<0.0)&&((1.0*v1)>0.0)
+solve instance:(((1.0*v0)+(1.0*v1))<0.0)&&((1.0*v1)>0.0)
+symbool:((((1.0*$V21)+(1.0*$V22)) < 0.0) & ((1.0*$V22) > 0.0))
+put into true trie: (((1.0*v0)+(1.0*v1))<0.0)&&((1.0*v1)>0.0)with solution:null
+time for solving:17
+PCChoiceGenerator中的输出－－pc:constraint # = 1
+(val1_1_SYMREAL + val2_2_SYMREAL) < CONST_0.0
+ONE IS DONEPCChoiceGenerator中的输出－－pc:constraint # = 1
+(val1_1_SYMREAL + val2_2_SYMREAL) < CONST_0.0
+val2 greater than zero
+ONE IS DONEval1 equals zero
+PCChoiceGenerator中的输出－－pc:constraint # = 1
+CONST_0.0 == (val1_1_SYMREAL + val2_2_SYMREAL)
+instance:za.ac.sun.cs.green.Instance@5ccd43c2
+[20161224 18:54:54][za.ac.sun.cs.green.taskmanager.ParallelTaskManager process][信息] processing serviceName="sat"
+canonized:(((1.0*val1_1_SYMREAL)+(1.0*val2_2_SYMREAL))==0.0)&&((1.0*val2_2_SYMREAL)<0.0)
+found no result for:(((1.0*v0)+(1.0*v1))==0.0)&&((1.0*v1)<0.0)
+solve instance:(((1.0*v0)+(1.0*v1))==0.0)&&((1.0*v1)<0.0)
+symbool:((((1.0*$V25)+(1.0*$V26)) == 0.0) & ((1.0*$V26) < 0.0))
+put into true trie: (((1.0*v0)+(1.0*v1))==0.0)&&((1.0*v1)<0.0)with solution:null
+time for solving:45
+instance:za.ac.sun.cs.green.Instance@7960847b
+[20161224 18:54:54][za.ac.sun.cs.green.taskmanager.ParallelTaskManager process][信息] processing serviceName="sat"
+expression:(0.0==(val1_1_SYMREAL+val2_2_SYMREAL))&&(0.0==val2_2_SYMREAL)
+expression after order:(0.0==(val1_1_SYMREAL+val2_2_SYMREAL))&&(val2_2_SYMREAL==0.0)
+canonized:(((1.0*val1_1_SYMREAL)+(1.0*val2_2_SYMREAL))==0.0)&&((1.0*val2_2_SYMREAL)==0.0)
+found no result for:(((1.0*v0)+(1.0*v1))==0.0)&&((1.0*v1)==0.0)
+solve instance:(((1.0*v0)+(1.0*v1))==0.0)&&((1.0*v1)==0.0)
+symbool:((((1.0*$V29)+(1.0*$V30)) == 0.0) & ((1.0*$V30) == 0.0))
+put into true trie: (((1.0*v0)+(1.0*v1))==0.0)&&((1.0*v1)==0.0)with solution:null
+time for solving:21
+instance:za.ac.sun.cs.green.Instance@5c8da962
+[20161224 18:54:54][za.ac.sun.cs.green.taskmanager.ParallelTaskManager process][信息] processing serviceName="sat"
+canonized:(((1.0*val1_1_SYMREAL)+(1.0*val2_2_SYMREAL))==0.0)&&((1.0*val2_2_SYMREAL)>0.0)
+found no result for:(((1.0*v0)+(1.0*v1))==0.0)&&((1.0*v1)>0.0)
+solve instance:(((1.0*v0)+(1.0*v1))==0.0)&&((1.0*v1)>0.0)
+symbool:((((1.0*$V33)+(1.0*$V34)) == 0.0) & ((1.0*$V34) > 0.0))
+put into true trie: (((1.0*v0)+(1.0*v1))==0.0)&&((1.0*v1)>0.0)with solution:null
+time for solving:15
+PCChoiceGenerator中的输出－－pc:constraint # = 1
+CONST_0.0 == (val1_1_SYMREAL + val2_2_SYMREAL)
+ONE IS DONEPCChoiceGenerator中的输出－－pc:constraint # = 1
+CONST_0.0 == (val1_1_SYMREAL + val2_2_SYMREAL)
+ONE IS DONEPCChoiceGenerator中的输出－－pc:constraint # = 1
+CONST_0.0 == (val1_1_SYMREAL + val2_2_SYMREAL)
+val2 greater than zero
+ONE IS DONEPCChoiceGenerator中的输出－－pc:constraint # = 1
+(val1_1_SYMREAL + val2_2_SYMREAL) > CONST_0.0
+instance:za.ac.sun.cs.green.Instance@77556fd
+[20161224 18:54:54][za.ac.sun.cs.green.taskmanager.ParallelTaskManager process][信息] processing serviceName="sat"
+canonized:(((1.0*val1_1_SYMREAL)+(1.0*val2_2_SYMREAL))>0.0)&&((1.0*val2_2_SYMREAL)<0.0)
+found no result for:(((1.0*v0)+(1.0*v1))>0.0)&&((1.0*v1)<0.0)
+solve instance:(((1.0*v0)+(1.0*v1))>0.0)&&((1.0*v1)<0.0)
+symbool:((((1.0*$V37)+(1.0*$V38)) > 0.0) & ((1.0*$V38) < 0.0))
+put into true trie: (((1.0*v0)+(1.0*v1))>0.0)&&((1.0*v1)<0.0)with solution:null
+time for solving:13
+instance:za.ac.sun.cs.green.Instance@9e89d68
+[20161224 18:54:54][za.ac.sun.cs.green.taskmanager.ParallelTaskManager process][信息] processing serviceName="sat"
+expression:(0.0==val2_2_SYMREAL)&&((val1_1_SYMREAL+val2_2_SYMREAL)>0.0)
+expression after order:(val2_2_SYMREAL==0.0)&&((val1_1_SYMREAL+val2_2_SYMREAL)>0.0)
+canonized:(((1.0*val1_1_SYMREAL)+(1.0*val2_2_SYMREAL))>0.0)&&((1.0*val2_2_SYMREAL)==0.0)
+found no result for:(((1.0*v0)+(1.0*v1))>0.0)&&((1.0*v1)==0.0)
+solve instance:(((1.0*v0)+(1.0*v1))>0.0)&&((1.0*v1)==0.0)
+symbool:((((1.0*$V41)+(1.0*$V42)) > 0.0) & ((1.0*$V42) == 0.0))
+put into false trie: (((1.0*v0)+(1.0*v1))>0.0)&&((1.0*v1)==0.0)with solution:null
+time for solving:337
+instance:za.ac.sun.cs.green.Instance@16f65612
+[20161224 18:54:54][za.ac.sun.cs.green.taskmanager.ParallelTaskManager process][信息] processing serviceName="sat"
+canonized:(((1.0*val1_1_SYMREAL)+(1.0*val2_2_SYMREAL))>0.0)&&((1.0*val2_2_SYMREAL)>0.0)
+found no result for:(((1.0*v0)+(1.0*v1))>0.0)&&((1.0*v1)>0.0)
+solve instance:(((1.0*v0)+(1.0*v1))>0.0)&&((1.0*v1)>0.0)
+symbool:((((1.0*$V45)+(1.0*$V46)) > 0.0) & ((1.0*$V46) > 0.0))
+put into true trie: (((1.0*v0)+(1.0*v1))>0.0)&&((1.0*v1)>0.0)with solution:null
+time for solving:13
+PCChoiceGenerator中的输出－－pc:constraint # = 1
+(val1_1_SYMREAL + val2_2_SYMREAL) > CONST_0.0
+ONE IS DONEPCChoiceGenerator中的输出－－pc:constraint # = 1
+(val1_1_SYMREAL + val2_2_SYMREAL) > CONST_0.0
+val2 greater than zero
+ONE IS DONEParallelTaskManager:: processedCount = 12
+ParallelTaskManager:: threadsCreated = 36
+ParallelTaskManager:: maxSimultaneousThreads = 1
+SATSlicerService:: invocations = 12
+SATSlicerService:: totalConjuncts = 21
+SATSlicerService:: minimalConjuncts = 21
+SATSlicerService:: conjunctReduction = 0.0
+SATSlicerService:: totalVariables = 24
+SATSlicerService:: minimalVariables = 24
+SATSlicerService:: variableReduction = 0.0
+SATCanonizerService:: invocations = 12
+SATCoralService:: invocationCount = 12
+SATCoralService:: cacheHitCount = 0
+SATCoralService:: cacheMissCount = 12
+SATCoralService:: timeConsumption = 1406
+SATCoralService:: 
+*********** profiles*********************
+imply: 2 ms [0 s]
+query: 19 ms [0 s]
+solve: 1407 ms [1 s]
+save: 8 ms [0 s]
+getUnsatCore: 0 ms [0 s]
+
+**************************************
+
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:02
+states:             new=11,visited=0,backtracked=11,end=7
+search:             maxDepth=3,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=4
+heap:               new=369,released=72,maxLive=347,gcCycles=9
+instructions:       3224
+max memory:         165MB
+loaded code:        classes=60,methods=1275
+
+====================================================== search finished: 16-12-24 下午6:54
+
